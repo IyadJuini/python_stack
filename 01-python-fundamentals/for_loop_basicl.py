@@ -16,7 +16,7 @@ for i in range(1,101):
         print(i,"coding dojo")
     else: print(i)
 
-# ----------Sucker's Huge-------
+# ----------Sucker's Huge----------
 
 sum=0
 for i in range(0,500001):
@@ -24,13 +24,13 @@ for i in range(0,500001):
         sum+=i
 print(sum)
 
-# ----------countdown By Fours--------
+# ----------countdown By Fours----------
 
 for i in range(2018,-1,-4):
     print(i)
 
 
-# ------Flexible Counter------------
+# ------Flexible Counter--------------
 
 def Flex(lowNum,highNum,multi):
     for i in range(lowNum,highNum+1):
