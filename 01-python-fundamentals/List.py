@@ -11,8 +11,12 @@ sports_directory = {
 }
 z = [ {'x': 10, 'y': 20} ]
 
-# x[1][0]= 15
+
+
+# x[1][0]= 15 aaa
+
 # print(x)
+
 # ...........10 -> 15 ..........
 
 # students[0]['last_name'] = 'Bryant'
