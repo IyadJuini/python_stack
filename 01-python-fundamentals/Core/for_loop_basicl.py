@@ -9,13 +9,13 @@
 
 # # ---------Counting the Dojo Way--------
 
-for i in range (1,101):
-    if i % 10 == 0  :
-        print("Coding Dojo")
-    elif i % 5 == 0 :
-        print("Coding")
-    else:
-        print(i)
+# for i in range (1,101):
+#     if i % 10 == 0  :
+#         print("Coding Dojo")
+#     elif i % 5 == 0 :
+#         print("Coding")
+#     else:
+#         print(i)
 
 # # ----------Sucker's Huge----------
 
@@ -33,10 +33,10 @@ for i in range (1,101):
 
 # # ------Flexible Counter--------------
 
-# def Flex(lowNum,highNum,multi):
-#     for i in range(lowNum,highNum+1):
-#         if i%multi==0:
-#             print(i)
-#     return None
+def Flex(lowNum,highNum,multi):
+    for i in range(lowNum,highNum+1):
+        if i%multi==0:
+            print(i)
+    # return None
 
-# Flex(2,9,3)
+Flex(2,9,3)
