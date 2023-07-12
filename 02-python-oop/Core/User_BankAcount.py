@@ -17,11 +17,6 @@ class BankAccount:
     def display_account_info(self):
         print(f"YOUR INT RATE :{self.int_rate} & YOUR BALANCE IS : {self.balance}")
         # your code here
-    def yield_interest(self):
-        # your code here
-        if self.balance > 0 :
-            self.balance += self.balance * self.int_rate
-            return self
 
 class User:
     def __init__(self, name, email):
@@ -29,7 +24,7 @@ class User:
         self.email = email
         self.account = BankAccount(int_rate = 0.02, balance=0)
     
-    def make_deposit(self,amount):
+    def make_deposit(self, amount):
         self.account.deposit(amount)
         return self
     
