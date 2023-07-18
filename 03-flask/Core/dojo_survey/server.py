@@ -13,13 +13,20 @@ def process():
     session['location']  = request.form['location']
     session['language']  = request.form['language']
     session['comments']  = request.form['comments']
+    session['sex'] = request.form['sex']
+    session['accept'] = request.form['accept']
+    if session['accept'] == "on":
+        session['accept'] = "you agree."
+    else :
+        session['accept'] = "You don't agree"  
+        
     print(f"{session['username']} {session['location']} {session['language']} {session['comments']} ")
-    return redirect("result")
+    return redirect("/display")
 
-@app.route('/result')
-def result():
-    return render_template("result.html")
+@app.route('/display')
+def display():
+    return render_template("display.html")
 
 if __name__ =='__main__':
-    app.run(debug = True, port=8000)
+    app.run(debug = True, port=5000)
 
